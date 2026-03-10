@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Para Casa - JS Parte 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Desafio 1:</h1>
+    <p id="texto-luz">A luz está APAGADA</p>
+    <button onclick="alternarLuz()">Muda o estado da luz</button>
+    <br>
+    <h1>Desafio 2:</h1>
+    <h1 id="contador">2</h1>
+    <button onclick="dobrar()">Dobrar</button>
+    <script>
+        function alternarLuz(){
+            let visorTexto = document.querySelector('#texto-luz');
+            if(visorTexto.innerHTML === 'A luz está APAGADA'){
+                visorTexto.innerHTML = 'A luz está ACESA';
+            }
+            else{
+                visorTexto.innerHTML = 'A luz está APAGADA';
+            };
+        };
+        let valor = 2;
+        function dobrar(){
+            let visorContador = document.querySelector('#contador');
+            valor = valor * 2;
+            visorContador.innerHTML = valor;
+            if(valor > 100){
+                alert(`Cuidado, o número ${valor} está ficando muito grande!`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Prof. Dr. Roberto M. Cesar Jr.'s Homepage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Webysther_20170627_-_Logo_IME-USP_sem_texto.svg">
+
+	<style>
+        body {
+            background-color: white;
+            color: black;
+            display: flex;
+			flex-direction: column;
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+		.a{
+            color: black;
+        }
+        .a:link{
+            color: #0000ee;
+        }
+        .a:visited{
+            color: #551a8b;
+        }
+        .a:active{
+            color: #0000ee;
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(172, 172, 172);
+            width: 100%;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: flex-end;
+            box-sizing: border-box;
+        }
+        .links nav{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #sobre-o-professor{
+            display: flex;
+            flex-direction: row;
+            border-radius: 16px;
+            width: 70vw;
+            align-items: center;
+            gap: 20px;
+            margin: 40px auto;   
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+        }
+        #fotomarcondes{
+            border-radius: 12px;
+            width: 350px;
+        }
+        #texto-sobre-o-professor{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        #texto-sobre-o-professor a{
+            margin: 0;
+        }
+        #navegador-interesses{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 8px;
+        }
+        #area-de-interesses{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+            border-radius: 16px;
+            width: 50vw;
+            margin: 40px auto;
+            justify-content: center;
+        }
+        @media (min-width: 950px){
+        .ajusta-direction{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+        }
+        @media (max-width: 950px) {
+            .cabecalho{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .links{
+                display: flex;
+                align-items: center;
+            }
+            .titulo{
+                display: none;
+            }
+            .ajusta-direction{
+                flex-direction: column;
+            }
+            #sobre-o-professor{
+                flex-direction: column;
+            }
+            #navegador-interesses{
+                flex-direction: column;
+            }
+        }
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<h1 class="titulo">Prof. Dr. Roberto M. Cesar Jr.</h1>
+        <div class="links">
+        <nav>
+            <a href="/home/pedrorsnt/Programas/Faculdade/IntroDev/Entrega Github/WebMAC/Atividades/[01] Primeira Semana/PáginaMarcondes/index.html">About</a>
+            <a href="/home/pedrorsnt/Programas/Faculdade/IntroDev/Entrega Github/WebMAC/Atividades/[01] Primeira Semana/PáginaMarcondes/publicationsandprojects.html">Publications and Projects</a>
+            <a href="/home/pedrorsnt/Programas/Faculdade/IntroDev/Entrega Github/WebMAC/Atividades/[01] Primeira Semana/PáginaMarcondes/paststudents.html">Past Students</a>
+            <a href="/home/pedrorsnt/Programas/Faculdade/IntroDev/Entrega Github/WebMAC/Atividades/[01] Primeira Semana/PáginaMarcondes/contact.html">Contact</a>
+        </nav>
+    </div>
+	</header>
+    <div style="height: 1px; background-color: rgb(22, 21, 21);"></div>
+
+    <div id="sobre-o-professor">
+        <img id="fotomarcondes" src="https://www.ime.usp.br/~cesar/index_files/image003.jpg">
+        <div id="texto-sobre-o-professor">
+            <h2>About Roberto M. Cesar Jr.</h2> 
+            <h3>Full Professor</h3>
+            <a href="https://www.ime.usp.br/dcc/">Department of Computer Science</a>
+            <a href="https://www.ime.usp.br">Institute of Mathmatics, Statistics and Computer Science</a>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+                <span><a href="https://www5.usp.br/">University of São Paulo</a>, <a href="https://www.google.com/search?q=Brazil">Brazil</a></span>
+                <img src="https://www.ime.usp.br/~mqz/brazil-flag.gif" width="25px" height="15px">
+            </div>
+            <p>Roberto M. Cesar Jr. holds a BSc in Computer Science from São Paulo State University (IBILCE – UNESP, 1992), an MSc in Electrical Engineering from the University of Campinas (UNICAMP, 1993), and a PhD in Physics from the University of São Paulo (USP, 1997). He is currently a Full Professor in the Department of Computer Science at the Institute of Mathematics and Statistics (IME) – USP, and an Associate Researcher at InovaUSP.</p>
+            <p>He served as a member of the FAPESP Computer Science Area Panel (2006–2012) and as a reviewer for the CAPES Triennial Evaluation Committee for Computer Science (2007–2009, 2010–2012). He was Director of the USP eScience Research Center and Head of the Department of Computer Science at IME-USP. From 2010 to 2012, he was also a researcher at CTBE – CNPEM. From 2006 to 2023, he acted as Scientific Advisor to the Scientific Director of FAPESP and was responsible for the CEPID and Engineering Research Center programs. He is a member of the São Paulo State Academy of Sciences (ACIESP) and has delivered invited lectures at several conferences, including SIBGRAPI 2011, SHAPES 2.0 (2012), and eSon – IEEE eScience 2013. He is co-creator of the ScriptLattes tool and serves as Associate Editor for Pattern Recognition and the Journal of the Brazilian Computer Society.</p>
+            <p>His research interests span Mathematical and Engineering aspects of Computer Science, with emphasis on Computer Vision, Pattern Recognition, Image Processing, Bioinformatics, and eScience. His full list of publications and citations is available at: <a href="https://scholar.google.com/citations?user=yGsck-AAAAAJ&hl=en">Google Scholar</a>.</p>
+        </div>
+    </div>
+    <div id="area-de-interesses">
+        <div class="ajusta-direction">
+            <div style="padding: 15px; gap: 20px;">
+                <h2>Research Areas:</h2>
+            </div>
+            <nav id="navegador-interesses">
+                <a><strong>Computer Vision</strong></a>
+                <a><strong>Machine Learning</strong></a>
+                <a><strong>Artificial Intelligence</strong></a>
+                <a><strong>Data Science</strong></a>
+            </nav>
+        </div>
+    </div>
+
+</body>
+
+
+
+

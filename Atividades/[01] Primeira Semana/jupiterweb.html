@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>JupiterWeb</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://logodownload.org/wp-content/uploads/2014/12/usp-logo-3.png">
+	<style>
+		.cabecalho{
+			display: flex;
+			flex-direction: row;
+			align-items: center;  
+   	 		padding: 10px 20px;
+			gap: 20px;
+		}
+		.navg{
+			display: flex;
+			flex-direction: column;
+			border: 1px solid grey;
+			height: fit-content;
+			width: 200px;
+		}
+		.navg a {
+			padding: 5px;
+			font-size: 12px;
+		}
+		.secprinc{
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;
+			gap: 20px;
+		}
+		.seclogin{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		.login{
+			display: flex;
+			flex-direction: column;
+			margin-left: 20px;
+			margin-top: 20px;
+			margin: 20px auto; 
+			border: 3px solid rgb(252, 180, 33);  
+			padding: 20px;
+			position: absolute;   
+			top: 50%;
+			left: 50%;
+			gap: 3px;
+			transform: translate(-50%, -50%);
+			background: rgba(255,255,255,0.9);
+			border-radius: 20%;
+		}
+		a{
+			color: black;
+			
+		}
+		.navg a:hover{
+			background-color: darkgrey;
+		}
+		.container-imagem{
+			width: 100%;
+			display: flex;
+			position: relative;
+			justify-content: center;
+		}
+		.imagem-fundo{
+			width: 50%;
+			height: auto;
+			display: block;
+		}
+		@media (max-width: 768px){
+			.somem{
+				display:none;
+			}
+			.imagem-fundo{
+				display:none;
+			}
+			.login{
+				position: static;
+				transform: none;
+				margin: 20px auto;
+			}
+		}
+		@media (min-width: 768px){
+			.imagem-abaixo{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo.png" style="height: 50px; width: auto">
+		<img class="somem" src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo-texto.png" style="height: 50px; width: auto">
+	</header>
+	<div style="height: 8px; background-color: rgb(252, 180, 33);"></div>
+	<div style="height: 8px; background-color: rgb(100, 196, 210);"></div>
+	<div style="height: 16px; background-color: rgb(16, 148, 171);"></div>
+	<div class="secprinc">
+		<nav class="navg">
+			<div style="color: white; font-size: 12; background-color: darkgrey; font-weight: bold; padding: 5px;">Menu</div>
+			<a>Calendário Escolar</a>
+			<a>Curso de Ingresso</a>
+			<a>Disciplinas</a>
+			<a>Editais</a>
+			<a>Esqueceu a Senha</a>
+			<a>FAQ</a>
+		</nav>
+		<div class="seclogin">
+			<a class="somem" style="font-size: 12px;">Login</a>
+			<div class="somem" style="height: 1px; background-color: black;"></div>
+			<div class="container-imagem">
+				<img class="imagem-fundo" src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2025/08/carreiras-usp.jpg?quality=70&strip=info&w=414&h=280&crop=1">
+				<form class="login">
+					<input type="text" placeholder="Usuário">
+					<input type="password" placeholder="Senha">
+					<input type="submit" value="Entrar">
+				</form>
+			</div>
+			<div class="somem" style="height: 1px; background-color: black;"></div>
+			<br>
+		<br>
+		<img class="imagem-abaixo" src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2025/08/carreiras-usp.jpg?quality=70&strip=info&w=414&h=280&crop=1" style="max-width: 80%; height: auto; align-self: center;">
+		</div>
+	</div>
+
+</body>
